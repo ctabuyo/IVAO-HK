@@ -15,6 +15,11 @@
 		122E962F1E4264F600DEF5BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122E962D1E4264F600DEF5BC /* LaunchScreen.storyboard */; };
 		122E963A1E4264F600DEF5BC /* IVAO_HKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E96391E4264F600DEF5BC /* IVAO_HKTests.swift */; };
 		122E96451E4264F600DEF5BC /* IVAO_HKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E96441E4264F600DEF5BC /* IVAO_HKUITests.swift */; };
+		122E96561E4269FE00DEF5BC /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E96551E4269FE00DEF5BC /* LogInVC.swift */; };
+		122E96591E426A5600DEF5BC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E96581E426A5600DEF5BC /* Extensions.swift */; };
+		122E965B1E426A6200DEF5BC /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E965A1E426A6200DEF5BC /* GlobalVariables.swift */; };
+		122E965D1E42731E00DEF5BC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E965C1E42731E00DEF5BC /* HomeVC.swift */; };
+		122E965F1E427A5800DEF5BC /* IVAOProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E965E1E427A5800DEF5BC /* IVAOProfile.swift */; };
 		294D0E01F05B218D3B092D46 /* Pods_IVAO_HKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6152F362E30CD2872DB78970 /* Pods_IVAO_HKTests.framework */; };
 		BC0F3642C34F62B73C2033CE /* Pods_IVAO_HK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A76FF8908AFE061B6AD0B57 /* Pods_IVAO_HK.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +55,11 @@
 		122E96401E4264F600DEF5BC /* IVAO-HKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IVAO-HKUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		122E96441E4264F600DEF5BC /* IVAO_HKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVAO_HKUITests.swift; sourceTree = "<group>"; };
 		122E96461E4264F600DEF5BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		122E96551E4269FE00DEF5BC /* LogInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		122E96581E426A5600DEF5BC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		122E965A1E426A6200DEF5BC /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		122E965C1E42731E00DEF5BC /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		122E965E1E427A5800DEF5BC /* IVAOProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IVAOProfile.swift; sourceTree = "<group>"; };
 		2064A1B69AA533EF9FFFCF6B /* Pods-IVAO-HKUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVAO-HKUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IVAO-HKUITests/Pods-IVAO-HKUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AF28AAD3E02A5CB0F3D5CEF /* Pods-IVAO-HKUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVAO-HKUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IVAO-HKUITests/Pods-IVAO-HKUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5A76FF8908AFE061B6AD0B57 /* Pods_IVAO_HK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IVAO_HK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +124,10 @@
 		122E96231E4264F600DEF5BC /* IVAO-HK */ = {
 			isa = PBXGroup;
 			children = (
+				122E96571E426A4C00DEF5BC /* Resources */,
+				122E96541E4269E200DEF5BC /* Controller */,
+				122E96531E4269DE00DEF5BC /* View */,
+				122E96521E4269DA00DEF5BC /* Model */,
 				122E96241E4264F600DEF5BC /* AppDelegate.swift */,
 				122E96261E4264F600DEF5BC /* ViewController.swift */,
 				122E96281E4264F600DEF5BC /* Main.storyboard */,
@@ -140,6 +154,39 @@
 				122E96461E4264F600DEF5BC /* Info.plist */,
 			);
 			path = "IVAO-HKUITests";
+			sourceTree = "<group>";
+		};
+		122E96521E4269DA00DEF5BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				122E965E1E427A5800DEF5BC /* IVAOProfile.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		122E96531E4269DE00DEF5BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		122E96541E4269E200DEF5BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				122E96551E4269FE00DEF5BC /* LogInVC.swift */,
+				122E965C1E42731E00DEF5BC /* HomeVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		122E96571E426A4C00DEF5BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				122E96581E426A5600DEF5BC /* Extensions.swift */,
+				122E965A1E426A6200DEF5BC /* GlobalVariables.swift */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		34B95335E69874D5CE51178E /* Frameworks */ = {
@@ -451,6 +498,11 @@
 			files = (
 				122E96271E4264F600DEF5BC /* ViewController.swift in Sources */,
 				122E96251E4264F600DEF5BC /* AppDelegate.swift in Sources */,
+				122E96561E4269FE00DEF5BC /* LogInVC.swift in Sources */,
+				122E965D1E42731E00DEF5BC /* HomeVC.swift in Sources */,
+				122E965F1E427A5800DEF5BC /* IVAOProfile.swift in Sources */,
+				122E96591E426A5600DEF5BC /* Extensions.swift in Sources */,
+				122E965B1E426A6200DEF5BC /* GlobalVariables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +658,7 @@
 				DEVELOPMENT_TEAM = SM4K2K6ATE;
 				INFOPLIST_FILE = "IVAO-HK/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "HK.IVAO-HK";
+				PRODUCT_BUNDLE_IDENTIFIER = "HK.IVAO-Hong-Kong";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -620,7 +672,7 @@
 				DEVELOPMENT_TEAM = SM4K2K6ATE;
 				INFOPLIST_FILE = "IVAO-HK/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "HK.IVAO-HK";
+				PRODUCT_BUNDLE_IDENTIFIER = "HK.IVAO-Hong-Kong";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -707,6 +759,7 @@
 				122E964B1E4264F600DEF5BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		122E964C1E4264F600DEF5BC /* Build configuration list for PBXNativeTarget "IVAO-HKTests" */ = {
 			isa = XCConfigurationList;
@@ -715,6 +768,7 @@
 				122E964E1E4264F600DEF5BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		122E964F1E4264F600DEF5BC /* Build configuration list for PBXNativeTarget "IVAO-HKUITests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +777,7 @@
 				122E96511E4264F600DEF5BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
