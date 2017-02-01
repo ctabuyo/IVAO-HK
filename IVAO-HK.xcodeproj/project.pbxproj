@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08617672491E9CFC6F0A6C40 /* Pods_IVAO_HKUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F006FCF23FC982227AD38800 /* Pods_IVAO_HKUITests.framework */; };
 		122E96251E4264F600DEF5BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E96241E4264F600DEF5BC /* AppDelegate.swift */; };
 		122E96271E4264F600DEF5BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E96261E4264F600DEF5BC /* ViewController.swift */; };
 		122E962A1E4264F600DEF5BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122E96281E4264F600DEF5BC /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		122E962F1E4264F600DEF5BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122E962D1E4264F600DEF5BC /* LaunchScreen.storyboard */; };
 		122E963A1E4264F600DEF5BC /* IVAO_HKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E96391E4264F600DEF5BC /* IVAO_HKTests.swift */; };
 		122E96451E4264F600DEF5BC /* IVAO_HKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E96441E4264F600DEF5BC /* IVAO_HKUITests.swift */; };
+		294D0E01F05B218D3B092D46 /* Pods_IVAO_HKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6152F362E30CD2872DB78970 /* Pods_IVAO_HKTests.framework */; };
+		BC0F3642C34F62B73C2033CE /* Pods_IVAO_HK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A76FF8908AFE061B6AD0B57 /* Pods_IVAO_HK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,15 @@
 		122E96401E4264F600DEF5BC /* IVAO-HKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IVAO-HKUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		122E96441E4264F600DEF5BC /* IVAO_HKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVAO_HKUITests.swift; sourceTree = "<group>"; };
 		122E96461E4264F600DEF5BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2064A1B69AA533EF9FFFCF6B /* Pods-IVAO-HKUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVAO-HKUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IVAO-HKUITests/Pods-IVAO-HKUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4AF28AAD3E02A5CB0F3D5CEF /* Pods-IVAO-HKUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVAO-HKUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IVAO-HKUITests/Pods-IVAO-HKUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5A76FF8908AFE061B6AD0B57 /* Pods_IVAO_HK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IVAO_HK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6152F362E30CD2872DB78970 /* Pods_IVAO_HKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IVAO_HKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BAE3FCD69F0C4A8B87F657B /* Pods-IVAO-HK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVAO-HK.release.xcconfig"; path = "Pods/Target Support Files/Pods-IVAO-HK/Pods-IVAO-HK.release.xcconfig"; sourceTree = "<group>"; };
+		9BE19344C3E0BD20438ED84C /* Pods-IVAO-HKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVAO-HKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IVAO-HKTests/Pods-IVAO-HKTests.release.xcconfig"; sourceTree = "<group>"; };
+		C9B611911E8734A18200FD6E /* Pods-IVAO-HKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVAO-HKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IVAO-HKTests/Pods-IVAO-HKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF83CBBCE12B863F9891EDA4 /* Pods-IVAO-HK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVAO-HK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IVAO-HK/Pods-IVAO-HK.debug.xcconfig"; sourceTree = "<group>"; };
+		F006FCF23FC982227AD38800 /* Pods_IVAO_HKUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IVAO_HKUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0F3642C34F62B73C2033CE /* Pods_IVAO_HK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				294D0E01F05B218D3B092D46 /* Pods_IVAO_HKTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08617672491E9CFC6F0A6C40 /* Pods_IVAO_HKUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				122E96381E4264F600DEF5BC /* IVAO-HKTests */,
 				122E96431E4264F600DEF5BC /* IVAO-HKUITests */,
 				122E96221E4264F600DEF5BC /* Products */,
+				C3088720C2D2C078435ECBB5 /* Pods */,
+				34B95335E69874D5CE51178E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = "IVAO-HKUITests";
 			sourceTree = "<group>";
 		};
+		34B95335E69874D5CE51178E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A76FF8908AFE061B6AD0B57 /* Pods_IVAO_HK.framework */,
+				6152F362E30CD2872DB78970 /* Pods_IVAO_HKTests.framework */,
+				F006FCF23FC982227AD38800 /* Pods_IVAO_HKUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3088720C2D2C078435ECBB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF83CBBCE12B863F9891EDA4 /* Pods-IVAO-HK.debug.xcconfig */,
+				9BAE3FCD69F0C4A8B87F657B /* Pods-IVAO-HK.release.xcconfig */,
+				C9B611911E8734A18200FD6E /* Pods-IVAO-HKTests.debug.xcconfig */,
+				9BE19344C3E0BD20438ED84C /* Pods-IVAO-HKTests.release.xcconfig */,
+				2064A1B69AA533EF9FFFCF6B /* Pods-IVAO-HKUITests.debug.xcconfig */,
+				4AF28AAD3E02A5CB0F3D5CEF /* Pods-IVAO-HKUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 122E96491E4264F600DEF5BC /* Build configuration list for PBXNativeTarget "IVAO-HK" */;
 			buildPhases = (
+				5B6A279C7DC92B5761A0C76B /* [CP] Check Pods Manifest.lock */,
 				122E961D1E4264F500DEF5BC /* Sources */,
 				122E961E1E4264F500DEF5BC /* Frameworks */,
 				122E961F1E4264F500DEF5BC /* Resources */,
+				A69445EE38B5554E46758280 /* [CP] Embed Pods Frameworks */,
+				2670D4BA74161C3650B54C8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 122E964C1E4264F600DEF5BC /* Build configuration list for PBXNativeTarget "IVAO-HKTests" */;
 			buildPhases = (
+				6CBE9C7C3B12934043329F8A /* [CP] Check Pods Manifest.lock */,
 				122E96311E4264F600DEF5BC /* Sources */,
 				122E96321E4264F600DEF5BC /* Frameworks */,
 				122E96331E4264F600DEF5BC /* Resources */,
+				1135399917ED0CF6BBDBF0C7 /* [CP] Embed Pods Frameworks */,
+				75734D107820C0AF398F3BDD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 122E964F1E4264F600DEF5BC /* Build configuration list for PBXNativeTarget "IVAO-HKUITests" */;
 			buildPhases = (
+				28AA7F13F4F93BAE7C6EC980 /* [CP] Check Pods Manifest.lock */,
 				122E963C1E4264F600DEF5BC /* Sources */,
 				122E963D1E4264F600DEF5BC /* Frameworks */,
 				122E963E1E4264F600DEF5BC /* Resources */,
+				C57A49E8216FAEB1361A26F7 /* [CP] Embed Pods Frameworks */,
+				805794C04B484610801840A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1135399917ED0CF6BBDBF0C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IVAO-HKTests/Pods-IVAO-HKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2670D4BA74161C3650B54C8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IVAO-HK/Pods-IVAO-HK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28AA7F13F4F93BAE7C6EC980 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B6A279C7DC92B5761A0C76B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CBE9C7C3B12934043329F8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		75734D107820C0AF398F3BDD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IVAO-HKTests/Pods-IVAO-HKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		805794C04B484610801840A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IVAO-HKUITests/Pods-IVAO-HKUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A69445EE38B5554E46758280 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IVAO-HK/Pods-IVAO-HK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C57A49E8216FAEB1361A26F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IVAO-HKUITests/Pods-IVAO-HKUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		122E961D1E4264F500DEF5BC /* Sources */ = {
@@ -413,6 +600,7 @@
 		};
 		122E964A1E4264F600DEF5BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF83CBBCE12B863F9891EDA4 /* Pods-IVAO-HK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SM4K2K6ATE;
@@ -426,6 +614,7 @@
 		};
 		122E964B1E4264F600DEF5BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BAE3FCD69F0C4A8B87F657B /* Pods-IVAO-HK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SM4K2K6ATE;
@@ -439,6 +628,7 @@
 		};
 		122E964D1E4264F600DEF5BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9B611911E8734A18200FD6E /* Pods-IVAO-HKTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +644,7 @@
 		};
 		122E964E1E4264F600DEF5BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE19344C3E0BD20438ED84C /* Pods-IVAO-HKTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +660,7 @@
 		};
 		122E96501E4264F600DEF5BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2064A1B69AA533EF9FFFCF6B /* Pods-IVAO-HKUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = SM4K2K6ATE;
@@ -483,6 +675,7 @@
 		};
 		122E96511E4264F600DEF5BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF28AAD3E02A5CB0F3D5CEF /* Pods-IVAO-HKUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = SM4K2K6ATE;
