@@ -172,7 +172,6 @@ class LogInVC: UIViewController, UIWebViewDelegate {
     
     
     func postToken(Token: String, completed: @escaping DownloadComplete) {
-        print(Token)
         let parameters : Parameters = ["api_key":"ivaomobileapp", "function":"Login", "IVAOTOKEN":Token]
         Alamofire.request("https://ivao.taip.pw/api/app.php", method: .post, parameters: parameters, headers: nil).responseString { response in
             

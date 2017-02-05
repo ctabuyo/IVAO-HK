@@ -20,6 +20,9 @@
 		122E965B1E426A6200DEF5BC /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E965A1E426A6200DEF5BC /* GlobalVariables.swift */; };
 		122E965D1E42731E00DEF5BC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E965C1E42731E00DEF5BC /* HomeVC.swift */; };
 		122E965F1E427A5800DEF5BC /* IVAOProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E965E1E427A5800DEF5BC /* IVAOProfile.swift */; };
+		124A894B1E47670F00C538E3 /* OnlineTraffic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A894A1E47670F00C538E3 /* OnlineTraffic.swift */; };
+		124A894D1E4767F500C538E3 /* OnlineTrafficVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A894C1E4767F500C538E3 /* OnlineTrafficVC.swift */; };
+		124A89551E477D0000C538E3 /* PilotsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A89541E477D0000C538E3 /* PilotsCell.swift */; };
 		1258E91F1E465B210087E338 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1258E91E1E465B210087E338 /* ProfileVC.swift */; };
 		294D0E01F05B218D3B092D46 /* Pods_IVAO_HKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6152F362E30CD2872DB78970 /* Pods_IVAO_HKTests.framework */; };
 		BC0F3642C34F62B73C2033CE /* Pods_IVAO_HK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A76FF8908AFE061B6AD0B57 /* Pods_IVAO_HK.framework */; };
@@ -61,6 +64,9 @@
 		122E965A1E426A6200DEF5BC /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		122E965C1E42731E00DEF5BC /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		122E965E1E427A5800DEF5BC /* IVAOProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IVAOProfile.swift; sourceTree = "<group>"; };
+		124A894A1E47670F00C538E3 /* OnlineTraffic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineTraffic.swift; sourceTree = "<group>"; };
+		124A894C1E4767F500C538E3 /* OnlineTrafficVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineTrafficVC.swift; sourceTree = "<group>"; };
+		124A89541E477D0000C538E3 /* PilotsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PilotsCell.swift; sourceTree = "<group>"; };
 		1258E91E1E465B210087E338 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		2064A1B69AA533EF9FFFCF6B /* Pods-IVAO-HKUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVAO-HKUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IVAO-HKUITests/Pods-IVAO-HKUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AF28AAD3E02A5CB0F3D5CEF /* Pods-IVAO-HKUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVAO-HKUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IVAO-HKUITests/Pods-IVAO-HKUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				122E965E1E427A5800DEF5BC /* IVAOProfile.swift */,
+				124A894A1E47670F00C538E3 /* OnlineTraffic.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -179,6 +186,8 @@
 				122E96551E4269FE00DEF5BC /* LogInVC.swift */,
 				122E965C1E42731E00DEF5BC /* HomeVC.swift */,
 				1258E91E1E465B210087E338 /* ProfileVC.swift */,
+				124A894C1E4767F500C538E3 /* OnlineTrafficVC.swift */,
+				124A89541E477D0000C538E3 /* PilotsCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -500,12 +509,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				122E96271E4264F600DEF5BC /* ViewController.swift in Sources */,
+				124A894D1E4767F500C538E3 /* OnlineTrafficVC.swift in Sources */,
 				122E96251E4264F600DEF5BC /* AppDelegate.swift in Sources */,
 				122E96561E4269FE00DEF5BC /* LogInVC.swift in Sources */,
+				124A894B1E47670F00C538E3 /* OnlineTraffic.swift in Sources */,
 				122E965D1E42731E00DEF5BC /* HomeVC.swift in Sources */,
 				1258E91F1E465B210087E338 /* ProfileVC.swift in Sources */,
 				122E965F1E427A5800DEF5BC /* IVAOProfile.swift in Sources */,
 				122E96591E426A5600DEF5BC /* Extensions.swift in Sources */,
+				124A89551E477D0000C538E3 /* PilotsCell.swift in Sources */,
 				122E965B1E426A6200DEF5BC /* GlobalVariables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
