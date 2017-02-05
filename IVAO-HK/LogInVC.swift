@@ -8,6 +8,8 @@
 
 import UIKit
 import WebKit
+import Alamofire
+import SwiftyJSON
 
 class LogInVC: UIViewController, UIWebViewDelegate {
     
@@ -20,10 +22,13 @@ class LogInVC: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var SlideshowView: UIView!
     @IBOutlet weak var webView: UIWebView!
 
+
     let items = ["Enjoy of ATC coverage in our amazing country...!", "Somethind to add - 1", "Something to add -2"]
     let images = [UIImage(named:"LogIn_Page_1"),UIImage(named:"LogIn_Page_2"), UIImage(named:"LogIn_Page_3")]
     var numberForSlider = 0
     let modelName = UIDevice.current.modelName
+    var sendTimer : Timer!
+
     
     
     
@@ -33,6 +38,7 @@ class LogInVC: UIViewController, UIWebViewDelegate {
         // Keyboard hides handle
         NotificationCenter.default.addObserver(self, selector: #selector(LogInVC.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(LogInVC.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+         sendTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(sendDataAndSegue), userInfo: nil, repeats: true)
         // Web View
         webView.delegate = self
         webView.loadRequest(NSURLRequest(url: NSURL(string: "http://login.ivao.aero/index.php?url=http://ivao.hk") as! URL) as URLRequest)
@@ -57,6 +63,10 @@ class LogInVC: UIViewController, UIWebViewDelegate {
         
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToFirstScreen" {
             
@@ -76,6 +86,7 @@ class LogInVC: UIViewController, UIWebViewDelegate {
     
     
     func logIn(ID: String, Pwd: String){
+        UserDefaults.standard.setValue(ID, forKey: "IVAO_VID")
         let loadUsernameJS: String = "var inputFields = document.querySelectorAll(\"input[type='text']\"); " +
         "     for (var i = inputFields.length >>> 0; i--;) { inputFields[i].value = '\(ID)';}"
         let loadText: String = "var inputFields = document.querySelectorAll(\"input[type='password']\"); " +
@@ -98,13 +109,87 @@ class LogInVC: UIViewController, UIWebViewDelegate {
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
         let URL = webView.request?.url?.absoluteString
-        print(URL)
         if URL?.range(of: "TOKEN") != nil {
+            let newstr = URL?.components(separatedBy: "IVAOTOKEN=").last
+            Token = newstr!
             webView.stopLoading()
-            self.performSegue(withIdentifier: "goToFirstScreen", sender: nil)
-            print("TOKEN FOUND")
         } else {
             
+        }
+    }
+    
+    func sendDataAndSegue() {
+        if Token != "" {
+            self.sendTimer.invalidate()
+            postToken(Token: Token) { () -> () in
+                let VIDPM = UserDefaults.standard.value(forKey: "IVAO_VID")! as! String
+                self.getUserData(VID: VIDPM ) { () -> () in
+                    self.performSegue(withIdentifier: "goToFirstScreen", sender: nil)
+                }
+               
+            }
+            
+        }
+        
+    }
+    
+    func getUserData(VID: String, completed: @escaping DownloadComplete) {
+        let parameters : Parameters = ["api_key":"ivaomobileapp", "function":"user_info", "vid":VID]
+        Alamofire.request("https://ivao.taip.pw/api/app.php", method: .post, parameters: parameters, headers: nil).responseString { response in
+            
+            
+            
+            switch(response.result) {
+            case .success(_):
+                if let data = response.result.value{
+                    completed()
+                    
+                    if let data2 = data.data(using: String.Encoding.utf8) {
+                        let json = JSON(data: data2)
+                        
+                        PfVID = json[0]["vid"].stringValue
+                        PfName = json[0]["name"].stringValue
+                        PfRating = json[0]["rating"].stringValue
+                        PfRatingATC = json[0]["ratingatc"].stringValue
+                        PfRatingPilot = json[0]["ratingpilot"].stringValue
+                        PfDivision = json[0]["division"].stringValue
+                        PfCountry = json[0]["country"].stringValue
+                        PfSkype = json[0]["skype"].stringValue
+                        
+                    }
+                    
+                }
+                break
+                
+            case .failure(_):
+                print(response.result.error as Any)
+                break
+                
+            }
+        }
+ 
+    }
+    
+    
+    func postToken(Token: String, completed: @escaping DownloadComplete) {
+        print(Token)
+        let parameters : Parameters = ["api_key":"ivaomobileapp", "function":"Login", "IVAOTOKEN":Token]
+        Alamofire.request("https://ivao.taip.pw/api/app.php", method: .post, parameters: parameters, headers: nil).responseString { response in
+            
+        
+            
+            switch(response.result) {
+            case .success(_):
+                if let data = response.result.value{
+                    completed()
+                }
+                break
+                
+            case .failure(_):
+                print(response.result.error as Any)
+                break
+                
+            }
         }
     }
     

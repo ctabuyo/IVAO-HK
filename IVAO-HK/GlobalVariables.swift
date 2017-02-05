@@ -10,3 +10,8 @@ import Foundation
 
 let HKLoginAPI = "http://login.ivao.aero/index.php?url=http%3A%2F%2Fivao.hk"
 var Token = ""
+
+typealias DownloadComplete = () -> ()
+
+
+

@@ -28,6 +28,27 @@ public enum DispatchLevel {
     }
 }
 
+
+
+class IVAOStatus {
+    public func translate(status: Int) -> String {
+        if status == 0 {
+            return "Suspended"
+        } else if status == 1 {
+            return "Inactive"
+        } else if status == 2 {
+            return "Active"
+        } else if status == 3  {
+            return "In Memoriam"
+        } else if status == 11 {
+            return "Supervisor"
+        } else if status == 12 {
+            return "Administrator"
+        }
+        return "Unknown"
+    }
+}
+
 public extension UIDevice {
     
     var modelName: String {
