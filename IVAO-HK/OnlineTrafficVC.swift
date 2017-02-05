@@ -14,7 +14,10 @@ class OnlineTrafficVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     @IBOutlet weak var tableView: UITableView!
     
-    
+    var callsignForSegue = "null"
+    var altForSegue = "null"
+    var speedForSegue = "null"
+    var coorForSegue = "null"
     
     
     var traffics = [onlinePilots]()
@@ -74,6 +77,16 @@ class OnlineTrafficVC: UIViewController, UITableViewDelegate, UITableViewDataSou
   
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "flightsToMap" {
+            let mapVC: MapVC = segue.destination as! MapVC
+            mapVC.callsign = callsignForSegue
+            mapVC.speed = speedForSegue
+            mapVC.altitude = altForSegue
+            mapVC.coordinates = coorForSegue
+        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -89,6 +102,14 @@ class OnlineTrafficVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         } else {
             return UITableViewCell()
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.altForSegue = traffics[indexPath.row].Altitude
+        self.speedForSegue = traffics[indexPath.row].Speed
+        self.callsignForSegue = traffics[indexPath.row].Callsign
+        self.coorForSegue = traffics[indexPath.row].Coordinate
+        self.performSegue(withIdentifier: "flightsToMap", sender: nil)
     }
 
     

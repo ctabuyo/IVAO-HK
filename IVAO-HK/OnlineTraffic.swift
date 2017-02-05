@@ -34,5 +34,17 @@ class onlinePilots {
 }
 
 class onlineATC {
+    var Callsign = "null"
+    var VID = "null"
+    var Rating = "null"
+    var ConnectionTime = "null"
+    var Frequency = "null"
     
+    init(callsign: String, vid: String, rating: String, connectiontime:String, frequency:String) {
+        self.Callsign = callsign
+        self.VID = vid
+        self.Rating = rating
+        self.ConnectionTime = connectiontime
+        self.Frequency = frequency
+    }
 }

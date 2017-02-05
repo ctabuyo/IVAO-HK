@@ -21,6 +21,8 @@ class LogInVC: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var LogInButton: UIButton!
     @IBOutlet weak var SlideshowView: UIView!
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var loadingSpinner: UIActivityIndicatorView!
 
 
     let items = ["Enjoy of ATC coverage in our amazing country...!", "Somethind to add - 1", "Something to add -2"]
@@ -43,12 +45,20 @@ class LogInVC: UIViewController, UIWebViewDelegate {
         webView.delegate = self
         webView.loadRequest(NSURLRequest(url: NSURL(string: "http://login.ivao.aero/index.php?url=http://ivao.hk") as! URL) as URLRequest)
         // Style components
+        if let _ = UserDefaults.standard.value(forKey: "IVAO_VID")  {
+            loadingSpinner.startAnimating()
+            
+        } else {
+            loadingView.isHidden = true
+            loadingSpinner.stopAnimating()
+        }
         adjustLayout()
         self.navigationController?.isNavigationBarHidden = true
         VIDTextField.layer.cornerRadius = 15.0
         VIDTextField.clipsToBounds = true
         PassTextField.layer.cornerRadius = 15.0
         PassTextField.clipsToBounds = true
+        PassTextField.isSecureTextEntry = true
         LogInButton.layer.cornerRadius = 15.0
         LogInButton.clipsToBounds = true
         LogInButton.backgroundColor = UIColor(red: 214/255, green: 31/255, blue: 40/255, alpha: 0.7)
@@ -102,6 +112,8 @@ class LogInVC: UIViewController, UIWebViewDelegate {
     }
     
     @IBAction func logInButton(_ sender: Any) {
+        loadingView.isHidden = false
+        loadingSpinner.startAnimating()
         logIn(ID: VIDTextField.text!, Pwd: PassTextField.text!)
     }
     
@@ -114,7 +126,7 @@ class LogInVC: UIViewController, UIWebViewDelegate {
             Token = newstr!
             webView.stopLoading()
         } else {
-            
+           
         }
     }
     
@@ -124,6 +136,8 @@ class LogInVC: UIViewController, UIWebViewDelegate {
             postToken(Token: Token) { () -> () in
                 let VIDPM = UserDefaults.standard.value(forKey: "IVAO_VID")! as! String
                 self.getUserData(VID: VIDPM ) { () -> () in
+                    self.loadingView.isHidden = true
+                    self.loadingSpinner.stopAnimating()
                     self.performSegue(withIdentifier: "goToFirstScreen", sender: nil)
                 }
                
